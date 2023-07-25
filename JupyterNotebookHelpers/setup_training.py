@@ -3,6 +3,7 @@ import os
 import sys
 import shutil
 from git import Repo
+sys.path.append('/workspace/Drembooth-Stable-Diffusion/')
 from dreambooth_helpers.joepenna_dreambooth_config import JoePennaDreamboothConfigSchemaV1
 from download_model import SDModelOption
 

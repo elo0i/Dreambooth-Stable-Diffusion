@@ -13,8 +13,8 @@ class SetupTraining:
     def __init__(self, args):
         self.training_images_save_path = "./training_images"
         self.config_save_path = "./joepenna-dreambooth-configs"
-        self.selected_model: SDModelOption = None
         self.args = args
+        self.selected_model = SDModelOption(repo_id='panopstor/EveryDream', filename='sd_v1-5_vae.ckpt')
 
     def submit_form_click(self, b):
         # training images

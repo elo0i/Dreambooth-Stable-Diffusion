@@ -179,7 +179,7 @@ class JoePennaDreamboothConfigSchemaV1:
                     max_training_steps=config_parsed['max_training_steps'],
                     save_every_x_steps=config_parsed['save_every_x_steps'],
                     training_images_folder_path=config_parsed['training_images_folder_path'],
-                    regularization_images_folder_path=config_parsed['regularization_images_folder_path'],
+                    regularization_images_folder_path='/workspace/Dreambooth-Stable-Diffusion/JupyterNotebookHelpers/Stable-Diffusion-Regularization-Images-person_ddim/person_ddim',
                     token=config_parsed['token'],
                     class_word=config_parsed['class_word'],
                     flip_percent=config_parsed['flip_percent'],

@@ -42,7 +42,7 @@ class SetupTraining:
             flip_percent=float(self.args.flip),
             learning_rate=self.args.learning_rate,
             model_repo_id=self.selected_model.repo_id,
-            model_path=self.selected_model.filename,
+            model_path='/workspace/sd_v1-5_vae.ckpt',
             run_seed_everything=False,
         )
 

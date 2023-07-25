@@ -3,7 +3,7 @@ import os
 import sys
 import shutil
 from git import Repo
-sys.path.append('/workspace/Drembooth-Stable-Diffusion/dreambooth_helpers')
+sys.path.append('/workspace/Dreambooth-Stable-Diffusion/dreambooth_helpers')
 os.chdir('/workspace/Dreambooth-Stable-Diffusion/')
 from dreambooth_helpers.joepenna_dreambooth_config import JoePennaDreamboothConfigSchemaV1
 os.chdir('/workspace/Dreambooth-Stable-Diffusion/JupyterNotebookHelpers/')

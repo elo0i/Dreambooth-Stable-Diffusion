@@ -184,7 +184,7 @@ class JoePennaDreamboothConfigSchemaV1:
                     class_word=config_parsed['class_word'],
                     flip_percent=config_parsed['flip_percent'],
                     learning_rate=config_parsed['learning_rate'],
-                    model_path='/workspace/Dreambooth-Stable-Diffusion/JupyterNotebookHelpers/modelos/sd_v1-5_vae.ckpt',
+                    model_path='/workspace/sd_v1-5_vae.ckpt',
                     config_date_time=config_parsed['config_date_time'],
                     seed=config_parsed['seed'],
                     debug=config_parsed['debug'],

@@ -12,8 +12,7 @@ class SDModelOption:
             print(f"Downloading '{self.repo_id}/{self.filename}'")
             return hf_hub_download(
                 repo_id=self.repo_id,
-                filename=self.filename,
-                cache_dir='./modelos/'  # descarga el archivo del modelo en una subcarpeta 'modelos'
+                filename=self.filename
             )
         else:
             raise Exception(

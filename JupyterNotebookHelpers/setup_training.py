@@ -3,10 +3,7 @@ import os
 import sys
 import shutil
 from git import Repo
-sys.path.append('/workspace/Dreambooth-Stable-Diffusion')
-os.chdir('/workspace/Dreambooth-Stable-Diffusion/')
 from dreambooth_helpers.joepenna_dreambooth_config import JoePennaDreamboothConfigSchemaV1
-os.chdir('/workspace/Dreambooth-Stable-Diffusion/JupyterNotebookHelpers/')
 from download_model import SDModelOption
 
 class SetupTraining:
@@ -42,7 +39,7 @@ class SetupTraining:
             flip_percent=float(self.args.flip),
             learning_rate=self.args.learning_rate,
             model_repo_id=self.selected_model.repo_id,
-            model_path='/workspace/sd_v1-5_vae.ckpt',
+            model_path=self.selected_model.filename,
             run_seed_everything=False,
         )
 

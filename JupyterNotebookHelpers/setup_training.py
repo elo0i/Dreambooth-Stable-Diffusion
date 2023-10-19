@@ -51,7 +51,7 @@ class SetupTraining:
 
     def download_regularization_images(self, dataset) -> str:
         # Download Regularization Images
-        repo_name = f"Stable-Diffusion-Regularization-Images/{dataset}"
+        repo_name = f"Stable-Diffusion-Regularization-Images-{dataset}"
         path_to_reg_images = os.path.join(repo_name, dataset)
 
         if not os.path.exists(path_to_reg_images):

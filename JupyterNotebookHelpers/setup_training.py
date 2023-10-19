@@ -51,12 +51,12 @@ class SetupTraining:
 
     def download_regularization_images(self, dataset) -> str:
         # Download Regularization Images
-        repo_name = f"Stable-Diffusion-Regularization-Images-{dataset}"
+        repo_name = f"Stable-Diffusion-Regularization-Images/{dataset}"
         path_to_reg_images = os.path.join(repo_name, dataset)
 
         if not os.path.exists(path_to_reg_images):
             print(f"Downloading regularization images for {dataset}. Please wait...")
-            Repo.clone_from(f"https://github.com/djbielejeski/{repo_name}.git", repo_name)
+            Repo.clone_from(f"https://github.com/elo0i/{repo_name}.git", repo_name)
             print(f"✅ Regularization images for {dataset} downloaded successfully.")
         else:
             print(f"✅ Regularization images for {dataset} already exist. Skipping download...")
